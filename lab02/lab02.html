@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 1</title>
+  
+
+
+  <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-4280998-1']);
+_gaq.push(['_setDomainName', 'cmosedu.com']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google- analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 2 - EE 421L&nbsp;</span></b></small></small></small>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>Authored
+by Martin Jaime,</o:p></p>
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>September 7, 2106<br>
+</o:p></p>
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><br>
+</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>
+</o:p></p><big><span style="font-family: Times New Roman; color: rgb(68, 170, 170);">Pre-lab work: </span></big>
+
+<br style="font-family: Times New Roman;">
+<span style="font-family: Times New Roman;"><span class="Apple-converted-space"><br>
+</span></span>All work is being backed up to github.com<br>
+<br>
+After logging in to the server, go into the ~/Downloads directory
+(create it if it does not exist) and run the following to download the
+lab2.zip, unzip it, and move it to the CMOSedu directory. <br>
+&nbsp;<br>
+<table style="text-align: left; width: 100%; background-color: rgb(204, 204, 204);" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-family: monospace; background-color: rgb(204, 204, 204);">&nbsp;&nbsp;&nbsp; wget http://cmosedu.com/jbaker/labs/ee421L/lab2/lab2.zip<br>
+&nbsp;&nbsp;&nbsp; unzip lab2.zip<br>
+&nbsp;&nbsp;&nbsp; mv lab2 ../CMOSedu<br>
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+Append "DEFINE lab2 $HOME/CMOSedu/lab2" to cds.lib file to define the
+new lab2 directory as a new library. After moving into the CMOSedu
+directory, start cadence with <span style="font-family: monospace; background-color: rgb(204, 204, 204);">virtuoso &amp;</span>. Select lab2 library, and open the schematic view of the cell sim_Ideal_ADC_DAC. <br>
+&nbsp;<br>
+<img style="width: 718px; height: 462px;" alt="media/fig01.jpg" src="media/fig01.jpg"><br>
+&nbsp;<br>
+<span style="font-family: monospace; background-color: rgb(204, 204, 204);"></span>Run
+the simulation by launching ADE L. ADE will open. Load the saved state
+by clicking on Session &gt; Load State&nbsp; and select Cellview. Click
+OK. Once you can see that the configuration has been properly loaded,
+click the green button to begin simulation. <br>
+&nbsp;<br>
+<img style="width: 692px; height: 475px;" alt="media/fig02.jpg" src="media/fig02.jpg"><br>
+<span class="Apple-converted-space">&nbsp;</span> <br>
+<br>
+&nbsp;<img style="width: 632px; height: 344px;" alt="media/fig03.jpg" src="media/fig03.jpg"><br>
+&nbsp;<br>
+Notice that the blue input signal Vin is a smooth analog signal that is
+converted into a 10 bit digital signal that is converted back again to
+an analog signal at Vout. <br>
+<br>
+If we plot the digital signals, we can find out which is the LSB and
+the MSB. Plot for just one period of the input signal, and plot the
+expected LSB and MSB (B0 and B9). <br>
+&nbsp;<br>
+<img alt="media/fig04.jpg" src="media/fig04.jpg"><img style="width: 692px; height: 475px;" alt="media/fig04.jpg" src="media/fig04.jpg"><br>
+&nbsp;<br>
+<img style="width: 585px; height: 472px;" alt="media/fig05.jpg" src="media/fig05.jpg"><br>
+<br>
+Notice that B0 is frequently changing as is expected of the LSB. B9, the MSB, changes once in the entire 500 ns period.<br>
+&nbsp;<br>
+<br>
+<span style="font-family: Times New Roman;">&nbsp;<span class="Apple-converted-space"><br>
+</span></span>
+<hr style="width: 100%; height: 2px; font-family: Times New Roman;"><br style="font-family: Times New Roman;">
+<span style="font-family: Times New Roman;"></span><br>
+<br>
+<hr style="width: 100%; height: 2px;"><o:p></o:p>
+
+
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">EE421L Lab Student Listi<span style="font-family: Times New Roman,Times,serif;">ng</span></a><span style="font-family: Times New Roman,Times,serif;"> | <a href=".." target="_top">My Lab Directory</a> | <a href="http://cmosedu.com/jbaker/courses/ee421L/f16/ee421L.htm" target="_top">EE421 Home Page</a>&nbsp;</span></o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><br>
+</o:p></p>
+
+
+
+</body></html>
