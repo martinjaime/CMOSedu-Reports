@@ -1,0 +1,21 @@
+I already had a working environment of cadence before the beginning of the course.
+
+Here is a setup of the environment variables in my .bashrc file.
+
+figure
+
+define locations of built-in Cadence libraries
+
+figure 3
+
+Set Spectre as the default simulator and set the backround as white for cleaner a display in the .cdsinit file.
+
+figure 4
+
+Run virtuoso & to start cadence. The ampersand allows the command to run in the background so that the command line is still available to the user.
+
+figure 5
+
+On the Library Manager, create a new library called Tutorial_1 by selecting File > New > Library and fill in the appropriate fields. Notice that there is a new definition for Tutorial_1 at the end of the cds.lib fil: `DEFINE Tutorial_1 /home/jaimem5/CMOSedu/Tutorial_1`.
+
+Create a new cell view by going to 

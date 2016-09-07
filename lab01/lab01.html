@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 1</title>
+  
+
+
+  <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-4280998-1']);
+_gaq.push(['_setDomainName', 'cmosedu.com']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google- analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+  </script></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 1 - EE 421L&nbsp;</span></b></small></small></small>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>Authored
+by Martin Jaime,</o:p></p>
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>September 6, 2016&nbsp;</o:p></p>
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><br>
+</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>
+</o:p></p><span style="font-family: Times New Roman;">Pre-lab work: </span>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<br style="font-family: Times New Roman;">
+<span style="font-family: Times New Roman;"><span class="Apple-converted-space"><br>
+</span></span><meta http-equiv="content-type" content="text/html; charset=utf-8"><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; margin-top: 0in; background-color: rgb(238, 236, 225);" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The lab reports will be drafted using html and placed on CMOSedu.<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Prior
+to the first day of lab, but no earlier than one week before the lab
+starts, get a CMOSedu account, using your UNLV email address, from Dr.
+Baker, rjacobbaker@gmail.com &nbsp;<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Review the material seen<span class="Apple-converted-space">&nbsp;</span><a href="http://cmosedu.com/jbaker/webpages/webpages.htm" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline;">here</a><span class="Apple-converted-space">&nbsp;</span>covering editing<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">webpages</span>&nbsp;(do this before the first lab)<span class="Apple-converted-space">&nbsp;</span></li></ul><span style="font-family: Times New Roman;">&nbsp;<span class="Apple-converted-space"><br>
+</span></span>
+<hr style="width: 100%; height: 2px; font-family: Times New Roman;"><br style="font-family: Times New Roman;">
+<span style="font-family: Times New Roman;">This lab will go through the first part of Tutorial 1 for Cadence seen </span><meta http-equiv="content-type" content="text/html; charset=utf-8"><span style="color: black; font-size: 16px; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Times New Roman; background-color: rgb(238, 236, 225);"><a href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline;">here</a>.
+This lab focuses on interfacing with the Cadence software running on a
+remote server through a command line interface with ssh using X11
+forwarding.<br>
+&nbsp;<br>
+The part that we cover in Tutorial 1 is setting up Cadence, laying out
+a circuit schematic, and simulating it using Cadence's Spectre
+simulation software.<br>
+<br>
+Fortunately, I already had a working environment of Cadence. <br>
+<br>
+<span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh</span> into the remote server with <span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh -Y &lt;username&gt;@csimcluster.ee.unlv.edu</span>. The <span style="font-family: monospace; background-color: rgb(204, 204, 204);">-Y</span>
+flag is used to forward X11 graphics. This way, the user can interface
+with the graphical user interface of Cadence. See the manual page for
+ssh for more details.<br>
+<br>
+In <span style="font-family: monospace; background-color: rgb(204, 204, 204);">.bashrc</span>, the following lines define environment variables for Cadence.<br>
+&nbsp;<br>
+</span>
+<div style="text-align: center;"><span style="color: black; font-size: 16px; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Times New Roman; background-color: rgb(238, 236, 225);"><img style="width: 378px; height: 87px;" alt="media/fig01.fig" src="media/fig01.jpg"></span><br>
+<span style="color: black; font-size: 16px; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Times New Roman; background-color: rgb(238, 236, 225);"></span></div>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>&nbsp;</o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>When modifying <font size="+1"><span style="font-family: monospace;">.bashrc</span></font>, ensure to resource it by running <font style="background-color: rgb(204, 204, 204); font-family: monospace;" size="+1"><span style="background-color: rgb(204, 204, 204); font-family: monospace;">source </span>~/.bashrc</font><span style="font-family: Times New Roman,Times,serif;">. </span>In the CMOSedu directory, the <font style="background-color: rgb(204, 204, 204);" size="+1"><span style="font-family: monospace;">cds.lib</span></font> file has the following definitions. <br>
+</o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
+<o:p></o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><img style="width: 722px; height: 50px;" alt="media/fig03.jpg" src="media/fig03.jpg"></o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>&nbsp;</o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>&nbsp;<br>
+</o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>We also set Spectre as the default simulator.
+It also helps to set the background color to white when graphing
+simulation results. Note that semicolons are used as comments. Anything
+after the semicolon after the semicolon will be ignored. <br>
+</o:p></p>
+<p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>&nbsp;<br>
+</o:p></p>
+ 
+<div style="text-align: center;"><img style="width: 471px; height: 90px;" alt="media/fig04.jpg" src="media/fig04.jpg"><br>
+</div>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">Once the environment is set up to work with Cadence, start with <font style="background-color: rgb(204, 204, 204);" size="+1"><span style="font-family: monospace;">virtuoso &amp;</span></font>. The ampersand is used to run Cadence in the background to maintain control of the command line.&nbsp;</p>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">Once all the windows are loaded, you will see the Command Interpreter Window (CIW) and the Library Manager window.</p>
+<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><img style="width: 743px; height: 705px;" alt="media/fig05.jpg" src="media/fig05.jpg"></p>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">After creating a new Library for
+Tutorial 1 and a new cell for the circuit, add two 10k resistors for a
+voltage divider, a voltage source of 1 V, and a reference point (gnd). Wire up the circuit components by pressing the shortcut key 'w'.</p>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><img style="width: 442px; height: 364px;" alt="media/fig07.jpg" src="media/fig07.jpg"><br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><br>
+</p>
+After clicking the "check and save" button, the CIW will display the following.<br>
+&nbsp;<br>
+<div style="text-align: center;"><img style="width: 725px; height: 193px;" alt="media/fig08.jpg" src="media/fig08.jpg"><br>
+</div>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">After launching Spectre, set a transient analysis on one second, analyzing the input and the output of the circuit. <br>
+</p>
+&nbsp;<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><img style="width: 511px; height: 350px;" alt="media/fig10.jpg" src="media/fig10.jpg"> <img style="width: 406px; height: 351px;" alt="media/fig09.jpg" src="media/fig09.jpg"><br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">Always
+ensure that simulation configurations are saved so that they can easily
+be run again to avoid setting them up again by going to Session &gt;
+Save State and selecting Cellview. Loading a saved state can be easily
+done with Session &gt; Load State and selecting Cellview. Finally,
+pressing the green "Netlist and Run button will run the simulation and
+graph the results in a new Window. <br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
+</p>
+<div style="text-align: center;"><img style="width: 397px; height: 194px;" alt="media/fig11.jpg" src="media/fig11.jpg"><br>
+<div style="text-align: left;">&nbsp;<br>
+<br>
+</div>
+</div>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
+</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
+<o:p></o:p></p>
+
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">Return to EE421L Labs</a><br>
+</o:p></p>
+
+
+</body></html>
