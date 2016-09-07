@@ -28,7 +28,7 @@ by Martin Jaime,</o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><br>
 </o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>
-</o:p></p><span style="font-family: Times New Roman;">Pre-lab work: </span>
+</o:p></p><big><span style="font-family: Times New Roman; color: rgb(68, 170, 170);">Pre-lab work: </span></big>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <br style="font-family: Times New Roman;">
 <span style="font-family: Times New Roman;"><span class="Apple-converted-space"><br>
@@ -49,7 +49,7 @@ simulation software.<br>
 <br>
 Fortunately, I already had a working environment of Cadence. <br>
 <br>
-<span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh</span> into the remote server with <span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh -Y &lt;username&gt;@csimcluster.ee.unlv.edu</span>. The <span style="font-family: monospace; background-color: rgb(204, 204, 204);">-Y</span>
+<small><span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh</span></small> into the remote server with <small><span style="font-family: monospace; background-color: rgb(204, 204, 204);">ssh -Y &lt;username&gt;@csimcluster.ee.unlv.edu</span></small>. The <small><span style="font-family: monospace; background-color: rgb(204, 204, 204);">-Y</span></small>
 flag is used to forward X11 graphics. This way, the user can interface
 with the graphical user interface of Cadence. See the manual page for
 ssh for more details.<br>
@@ -117,22 +117,76 @@ graph the results in a new Window. <br>
 </p>
 <div style="text-align: center;"><img style="width: 397px; height: 194px;" alt="media/fig11.jpg" src="media/fig11.jpg"><br>
 <div style="text-align: left;">&nbsp;<br>
-<br>
+<hr style="width: 100%; height: 2px;">&nbsp;<br>
+<big style="color: rgb(37, 149, 187);">Version Control and Backup</big><br>
+&nbsp;<br>
 </div>
 </div>
+To maintain backups and control versions of the reports made for this laboratory, I will use a version control tool called <a href="https://git-scm.com/">git</a> and the web service <a href="www.github.com">github.com</a>.
+At the root of the directory where all the reports and media reside,
+run the following to initiate a git repository, stage all the files,
+and commit the changes.<br>
+&nbsp;<small><font size="+1"><small><br style="font-family: monospace;">
+</small></font></small>
+<table style="text-align: left; width: 100%; background-color: rgb(204, 204, 204);" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><small><font size="+1"><small><span style="font-family: monospace;">&nbsp;&nbsp;&nbsp; git init</span><br style="font-family: monospace;">
+      <span style="font-family: monospace;">
+&nbsp;&nbsp;&nbsp; git add . # adds all the files in the current directory.</span><br style="font-family: monospace;">
+      <span style="font-family: monospace;">&nbsp;&nbsp;&nbsp; git commit -m "Initial commit." # Commits the changes (added files)</span></small></font></small><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"></p>
-<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><br>
-</p>
-<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><br>
-</p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
 </p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">After
+signing in on github.com, create a new repository by clicking on the
+top right plus symbol and select "New Repository". Enter a name. I
+chose "CMOSedu-Reports". Click on the "Create Repository" button.Copy the repository url. Mine was "https://github.com/martinjaime/CMOSedu-Reports.git". </p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;</p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">Back on the command line, at the root of the reports' directory, run the following to add a remote repository that points to github, and finally push the files to github.</p>
+&nbsp;<font size="+1"><br style="font-family: monospace;">
+</font>
+<table style="text-align: left; width: 100%; background-color: rgb(204, 204, 204);" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><small><font size="+1"><small><span style="font-family: monospace;">&nbsp;&nbsp;&nbsp; git remote add origin https://github.com/martinjaime/CMOSedu-Reports.git</span><br style="font-family: monospace;">
+      <span style="font-family: monospace;">&nbsp;&nbsp;&nbsp; git push -u origin master</span></small></font><br>
+      </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">The <span style="background-color: rgb(204, 204, 204); font-family: monospace;">-u</span> flag sets the master branch at the origin remote as the upstream so that whenever you run <span style="font-family: monospace; background-color: rgb(204, 204, 204);">git push</span>, it pushes to that remote repository automatically. Note that whenever you run <span style="font-family: monospace; background-color: rgb(204, 204, 204);">git push</span>, github will prompt you for your github credentials.</p>
+<br>
+<span style="font-family: Times New Roman;">After making new changes, run <span style="font-family: monospace; background-color: rgb(204, 204, 204);">git commit -am "&lt;message&gt;"</span> and <span style="font-family: monospace; background-color: rgb(204, 204, 204);">git push</span>
+to upload your changes to the remote repository. It is good practice to
+make many small commits during your workflow. See the tutorials and
+documentation at <a href="git-scm.com">git-scm.com</a></span> for more information on how to use the git command.<br>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">&nbsp;<br>
 <o:p></o:p></p>
 
 
-<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">Return to EE421L Labs</a><br>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">Return to EE421L Labs</a></o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><br>
 </o:p></p>
+
 
 
 </body></html>
