@@ -8,6 +8,7 @@
 
 
 
+
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 2</title>
   
 
@@ -23,7 +24,7 @@ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google- analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 2 - EE 421L&nbsp;</span></b></small></small></small>
+  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 2 - EE 421L&nbsp;</span></b></small></small></small>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>Authored
 by Martin Jaime,</o:p></p>
 
@@ -93,7 +94,7 @@ From&nbsp; the root of the directory containing report files commit all changes,
 <hr style="width: 100%; height: 2px; font-family: Times New Roman;">&nbsp;<br style="font-family: Times New Roman;">
 <big><span style="font-family: Times New Roman; font-weight: bold;"></span><span style="font-weight: bold;">Lab Report</span></big><br>
 &nbsp;<br>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
 <ul>
 <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The design of a 10-bit DAC using an n-well<span class="Apple-converted-space">&nbsp;</span><i>R</i><span class="Apple-converted-space">&nbsp;</span>of 10k</li>
   <ul>
@@ -141,7 +142,9 @@ of parallel 2R resistors.<br>
 </table>
 <ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
 <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Delay, driving a load<o:p></o:p></li><ul style="margin-bottom: 0in; margin-top: 0in;" type="circle">
-    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">With all the DAC inputs grounded except for B9, the DAC drives a drives a 10 pF load. The input voltage is a pulse source (0 to VDD) into B9.</li>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">With
+all the DAC inputs grounded except for B9, the DAC drives a drives a 10
+pF load. The input voltage is a pulse source (0 to VDD) into B9.</li>
     <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Knowing that the 50% time delay t<small><small><small>d</small></small></small> is 0.7RC, then t<small><small><small>d</small></small></small> = 0.7 * 10k * 10p = 70 ns.<br>
     </li>
     <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;"><span style="font-weight: bold;">Figure 8</span> illustrates the simulation results that match the calculations with its respective schematic.</li>
@@ -204,35 +207,100 @@ Mydesign_10-bit_DAC and then simply edit the schematic view!)<o:p></o:p></li>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;"><img style="width: 606px; height: 390px;" alt="media/fig01.jpg" src="media/fig01.jpg"><br>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 606px; height: 390px;" alt="media/fig01.jpg" src="media/fig01.jpg"><br>
       </td>
-      <td style="vertical-align: top;"><img style="width: 514px; height: 390px;" alt="media/fig16.jpg" src="media/fig16.jpg"><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 606px; height: 247px;" alt="media/fig17.jpg" src="media/fig17.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 514px; height: 390px;" alt="media/fig16.jpg" src="media/fig16.jpg"><br>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;"><br>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 606px; height: 247px;" alt="media/fig17.jpg" src="media/fig17.jpg"><br>
       </td>
-      <td style="vertical-align: top;"><br>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 557px; height: 247px;" alt="media/fig10.jpg" src="media/fig10.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1" style="vertical-align: top;">As
+we can see in these simulation results, the DAC made up of R resistors
+works similarly with little precision lost. The new design works as
+expecte<span style="font-family: Times New Roman,Times,serif;">.</span>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>&nbsp;&nbsp;
+
+<span style="font-family: Times New Roman,Times,serif;"><br>
+</span>
+<ul>
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">There were convergence problems while trying to simulate the circuit with the new DAC. The simulation was forced to converge by going to, in the ADE, Simulation -&gt; Options -&gt; Analog &nbsp;</li>
+  <ul>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Set the values as seen below&nbsp;</li>
+  </ul>
+  <ul>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">relative tolerance, reltol, of 10% (= 1e-1) &nbsp;&nbsp;</li>
+  </ul>
+  <ul>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">voltage absolute tolerance, vabstol, of 100 mV (= 1e-1) &nbsp;</li>
+  </ul>
+  <ul>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">current absolute tolerance, iabstol, of 1 mA (= 1e-3)&nbsp; <br>
+    </li>
+  </ul>
+</ul>
+<ul>
+  <li><span style="font-family: Times New Roman,Times,serif;">However,
+if the design drives a load, we get different results. In the following
+figures, the ADC to DAC design is tested driving a load R = 10k, C =
+10p, and both R and C. <br>
+    </span></li>
+</ul>
+<span style="font-family: Times New Roman,Times,serif;"></span>
+<table style="text-align: left; width: 100px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 469px; height: 330px;" alt="media/fig11.jpg" src="media/fig11.jpg"><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <div style="text-align: center;"><img style="width: 635px; height: 330px;" alt="media/fig12.jpg" src="media/fig12.jpg"><br>
+      </div>
+Notice that since we now have a resistive load that is equal to the resistance of the DAC, the amplitude drops by half.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 469px; height: 326px;" alt="media/fig15.jpg" src="media/fig15.jpg"><br>
+      </td>
+      <td style="vertical-align: top;">
+      <div style="text-align: center;"><img style="width: 624px; height: 326px;" alt="media/fig14.jpg" src="media/fig14.jpg"><br>
+      </div>
+      <div style="text-align: center;">With an RC load, the amplitude drops, with a phase shift. The output signal is also smoothed by the capasitive load.<br>
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 469px; height: 342px;" alt="media/fig18.jpg" src="media/fig18.jpg"><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 661px; height: 342px;" alt="media/fig19.jpg" src="media/fig19.jpg"><br>
+Without the resistor, the output has the same phase shift, with a smaller voltage drop.<br>
       </td>
     </tr>
   </tbody>
 </table>
-<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
-<ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Copy the schematic cell view<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">sim_Ideal_ADC_DAC</span><span class="Apple-converted-space">&nbsp;</span>to a cell sim<span style="color: red;">2</span>_Ideal_ADC_DAC and replace the ideal DAC with the one you just designed<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Use the sim2_Ideal_ADC_DAC to illustrate that your design works as expected.&nbsp;<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Show what happens if the DAC you designed drives a load (both R, C, and R/C)<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Explain what happens if the DAC drives a 10k load?<o:p></o:p></li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">In a real circuit the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">switches</span><span class="Apple-converted-space">&nbsp;</span>seen above (the outputs of the ADC) are implemented with transistors (MOSFETs).&nbsp;<o:p></o:p></li><ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Discuss what happens if the resistance of the switches isn't small compared to<span class="Apple-converted-space">&nbsp;</span><i>R</i>.</li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">If you have simulation convergence problems you can<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">force</span><span class="Apple-converted-space">&nbsp;</span>the simulation to converge by going to, in the ADE, Simulation -&gt; Options -&gt; Analog &nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Set the values as seen below&nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">relative tolerance, reltol, of 10% (= 1e-1) &nbsp;&nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">voltage absolute tolerance, vabstol, of 100 mV (= 1e-1) &nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">current absolute tolerance, iabstol, of 1 mA (= 1e-3) &nbsp;</li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The accuracy of the simulation will, obviously, be degraded &nbsp;</li></ul>
-</ul>
-<br>&nbsp;
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;</span><br>
+&nbsp; <o:p></o:p><br>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">In a real circuit the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">switches</span><span class="Apple-converted-space">&nbsp;</span>seen above (the outputs of the ADC) are implemented with transistors (MOSFETs).&nbsp;<o:p></o:p></li><ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">When
+the circuit is implemented as a measuerement device, or for monitoring
+a signal to communicate, it must be as unintrusive as possible. With a
+very high input resistance, the effects of the load are less significant.</li></ul></ul><br>
+<hr style="width: 100%; height: 2px;"><br>
+<div style="text-align: center;">All backed up work can be found at <a href="https://github.com/martinjaime/CMOSedu-Reports">https://github.com/martinjaime/CMOSedu-Reports</a> <br>
+</div>
+&nbsp; 
 <br>
 <hr style="width: 100%; height: 2px;"><o:p></o:p>
 
 
 
-<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">EE421L Lab Student Listi<span style="font-family: Times New Roman,Times,serif;">ng</span></a><span style="font-family: Times New Roman,Times,serif;"> | <a href=".." target="_top">My Lab Directory</a> | <a href="http://cmosedu.com/jbaker/courses/ee421L/f16/ee421L.htm" target="_top">EE421 Home Page</a>&nbsp;</span></o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">EE421L Lab Student Listi<span style="font-family: Times New Roman,Times,serif;">ng</span></a><span style="font-family: Times New Roman,Times,serif;"> | <a href=".." target="_top">My Lab Directory</a> | <a href="http://cmosedu.com/jbaker/courses/ee421L/f16/ee421L.htm" target="_top">EE421L Home Page</a>&nbsp;</span></o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
