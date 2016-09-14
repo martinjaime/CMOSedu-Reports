@@ -7,7 +7,8 @@
 
 
 
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 1</title>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 2</title>
   
 
 
@@ -32,7 +33,7 @@ by Martin Jaime,</o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><br>
 </o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>
-</o:p></p><big><span style="font-family: Times New Roman; color: rgb(68, 170, 170);">Pre-lab work: </span></big>
+</o:p></p><big style="color: black;"><span style="font-family: Times New Roman;">Pre-lab work: </span></big>
 
 <br style="font-family: Times New Roman;">
 <span style="font-family: Times New Roman;"><span class="Apple-converted-space"><br>
@@ -78,7 +79,7 @@ If we plot the digital signals, we can find out which is the LSB and
 the MSB. Plot for just one period of the input signal, and plot the
 expected LSB and MSB (B0 and B9). <br>
 &nbsp;<br>
-<img alt="media/fig04.jpg" src="media/fig04.jpg"><img style="width: 692px; height: 475px;" alt="media/fig04.jpg" src="media/fig04.jpg"><br>
+<img alt="media/fig04.jpg" src="media/fig04.jpg"><br>
 &nbsp;<br>
 <img style="width: 585px; height: 472px;" alt="media/fig05.jpg" src="media/fig05.jpg"><br>
 <br>
@@ -89,8 +90,143 @@ From&nbsp; the root of the directory containing report files commit all changes,
 <br>
 <span style="font-family: Times New Roman;">&nbsp;<span class="Apple-converted-space"><br>
 </span></span>
-<hr style="width: 100%; height: 2px; font-family: Times New Roman;"><br style="font-family: Times New Roman;">
-<span style="font-family: Times New Roman;"></span><br>
+<hr style="width: 100%; height: 2px; font-family: Times New Roman;">&nbsp;<br style="font-family: Times New Roman;">
+<big><span style="font-family: Times New Roman; font-weight: bold;"></span><span style="font-weight: bold;">Lab Report</span></big><br>
+&nbsp;<br>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<ul>
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The design of a 10-bit DAC using an n-well<span class="Apple-converted-space">&nbsp;</span><i>R</i><span class="Apple-converted-space">&nbsp;</span>of 10k</li>
+  <ul>
+    <li>The 10-bit DAC is made up of individial 1-bit DAC's as shown in <span style="font-weight: bold;">Figure 6</span>. <br>
+    </li>
+    <li>It is implemented with an R = 10k. The 2R portion of the voltage divider consists of two 10k resistors in series. </li>
+  </ul>
+</ul>
+<table style="text-align: left; width: 655px; margin-left: auto; margin-right: auto; height: 483px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 631px; height: 438px;" alt="media/fig06.jpg" src="media/fig06.jpg"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Figure 6</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The
+recistance of a DAC implemented with the design used in this lab, can
+be performed by grounding the input terminals, and finding the
+equivalent resistance of that circuit. See <span style="font-weight: bold;">Figure 7</span>.</li>
+</ul>
+<br>
+<table style="text-align: left; width: 460px; height: 457px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 450px; height: 390px;" alt="media/fig07.jpg" src="media/fig07.jpg"> <br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Figure 7:</span>
+By recursively transforming each parallel combination of resistors into
+their equivalent resistance, we can see that we ultimately obtain an
+output resistance of R, despite how large the DAC may be. Each parallel
+combination results in the sum of the series yielding another pair of
+of parallel 2R resistors.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Delay, driving a load<o:p></o:p></li><ul style="margin-bottom: 0in; margin-top: 0in;" type="circle">
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">With all the DAC inputs grounded except for B9, the DAC drives a drives a 10 pF load. The input voltage is a pulse source (0 to VDD) into B9.</li>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Knowing that the 50% time delay t<small><small><small>d</small></small></small> is 0.7RC, then t<small><small><small>d</small></small></small> = 0.7 * 10k * 10p = 70 ns.<br>
+    </li>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;"><span style="font-weight: bold;">Figure 8</span> illustrates the simulation results that match the calculations with its respective schematic.</li>
+</ul>
+</ul>
+&nbsp;<br>
+<table style="text-align: left; width: 1166px; height: 325px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 449px; height: 280px;" alt="media/fig08.1.jpg" src="media/fig08.2.jpg"><img style="width: 704px; height: 280px;" alt="media/fig08.1.jpg" src="media/fig08.1.jpg"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Figure 8</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">How
+to create a symbol view for your design with the exact same footprint
+as the Ideal_10-bit_DAC symbol view &nbsp;(hint: use Copy before you
+start drafting your design, e.g. Copy the cell Ideal_10-bit_DAC to
+Mydesign_10-bit_DAC and then simply edit the schematic view!)<o:p></o:p></li>
+<ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">See&nbsp;<a href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline;">Tutorial 1</a><span class="Apple-converted-space">&nbsp;</span>for additional help</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Note that your design won't use VDD, Verfp, or Vrefm so you can delete those pins on your design's DAC symbol view<span class="Apple-converted-space"> <br>
+      </span></li></ul>
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;"><span class="Apple-converted-space">How to create a symbol view for the DAC design with the same exact footprint as the </span>Ideal_10-bit_DAC symbol view.</li>
+  <ul>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">In the schematic view, go to through the menus Create &gt; Cellview &gt; From Cellview. With the settings as seen in <span style="font-weight: bold;">Figure 9</span>, click "OK". In the next window that pops up, arrange the setting of the pins to your liking, and click "OK". <br>
+    </li>
+    <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Then the symbol editor will appear where you can edit the appearance of the symbol.<br>
+    </li>
+  </ul>
+</ul>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 523px; height: 307px;" alt="media/fig09.jpg" src="media/fig09.jpg"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Figure 9</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;</span><br>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Simulations to verify the design functions correctly.</li>
+</ul>
+<br>
+<table style="text-align: left; width: 100px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><big><span style="font-weight: bold;">Ideal</span></big><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><big><span style="font-weight: bold;">My Design</span></big><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 606px; height: 390px;" alt="media/fig01.jpg" src="media/fig01.jpg"><br>
+      </td>
+      <td style="vertical-align: top;"><img style="width: 514px; height: 390px;" alt="media/fig16.jpg" src="media/fig16.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 606px; height: 247px;" alt="media/fig17.jpg" src="media/fig17.jpg"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225); margin-top: 0in;" type="disc">
+<ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Copy the schematic cell view<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">sim_Ideal_ADC_DAC</span><span class="Apple-converted-space">&nbsp;</span>to a cell sim<span style="color: red;">2</span>_Ideal_ADC_DAC and replace the ideal DAC with the one you just designed<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Use the sim2_Ideal_ADC_DAC to illustrate that your design works as expected.&nbsp;<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Show what happens if the DAC you designed drives a load (both R, C, and R/C)<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Explain what happens if the DAC drives a 10k load?<o:p></o:p></li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">In a real circuit the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">switches</span><span class="Apple-converted-space">&nbsp;</span>seen above (the outputs of the ADC) are implemented with transistors (MOSFETs).&nbsp;<o:p></o:p></li><ul style="margin-bottom: 0in; margin-top: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Discuss what happens if the resistance of the switches isn't small compared to<span class="Apple-converted-space">&nbsp;</span><i>R</i>.</li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">If you have simulation convergence problems you can<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">force</span><span class="Apple-converted-space">&nbsp;</span>the simulation to converge by going to, in the ADE, Simulation -&gt; Options -&gt; Analog &nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Set the values as seen below&nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">relative tolerance, reltol, of 10% (= 1e-1) &nbsp;&nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">voltage absolute tolerance, vabstol, of 100 mV (= 1e-1) &nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">current absolute tolerance, iabstol, of 1 mA (= 1e-3) &nbsp;</li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">The accuracy of the simulation will, obviously, be degraded &nbsp;</li></ul>
+</ul>
+<br>&nbsp;
 <br>
 <hr style="width: 100%; height: 2px;"><o:p></o:p>
 
