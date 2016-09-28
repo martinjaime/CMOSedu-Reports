@@ -8,7 +8,8 @@
 
 
 
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 1</title>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 4</title>
   
 
 
@@ -23,7 +24,9 @@ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google- analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 4 - EE 421L&nbsp;</span></b></small></small></small>
+  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="Martin Jaime" name="author">
+</head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 4 - EE 421L&nbsp;</span></b></small></small></small>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>Authored
 by Martin Jaime,</o:p></p>
 <p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">email: <span style="font-weight: bold;">jaimem5</span> at the UNLV students domain</p>
@@ -38,18 +41,153 @@ by Martin Jaime,</o:p></p>
 </o:p></p><big><span style="font-family: Times New Roman; color: rgb(68, 170, 170);">Pre-lab work: </span></big>
 
 <br style="font-family: Times New Roman;">
-<span style="font-family: Times New Roman;"><span class="Apple-converted-space"><br>
-</span></span><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; margin-top: 0in; background-color: rgb(238, 236, 225);" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;"><span class="Apple-converted-space">&nbsp;</span></li></ul><span style="font-family: Times New Roman;">&nbsp;<span class="Apple-converted-space"><br>
+<span style="font-family: Times New Roman;"><span class="Apple-converted-space"></span></span><meta http-equiv="content-type" content="text/html; charset=utf-8"><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Back-up all of your work from the lab and the course. &nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Read through this lab before starting it.<br>
+</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Go through&nbsp;<span style="text-align: start; word-spacing: 0px;">Tutorial 2 seen<span class="apple-converted-space">&nbsp;</span></span><a href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; text-align: start; word-spacing: 0px;">here</a><span style="text-align: start; word-spacing: 0px;">.&nbsp;</span></li>
+  <li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">In
+the simulations in this lab the body of all NMOS devices (the
+substrate) should be at ground (gnd!) and the body of all PMOS devices
+(the n-well) should be at a vdd! of 5V.<br>
+  </li>
+</ul><span class="Apple-converted-space"><br>
+<br>
+&nbsp;</span><span style="font-family: Times New Roman;"> <span class="Apple-converted-space">
 </span></span>
 <hr style="width: 100%; height: 2px; font-family: Times New Roman;">&nbsp;<br>
-<big><span style="font-weight: bold;">Lab Report</span></big><br style="font-family: Times New Roman;">&nbsp;
+<big><span style="font-weight: bold;">Lab Report</span></big><br style="font-family: Times New Roman;"><span style="font-family: Times New Roman,Times,serif;">&nbsp;
+</span><br style="font-family: Times New Roman,Times,serif;">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Generate 4 schematics and simulations (see the examples in the Ch6_IC61 library, but note that for the PMOS body should be at vdd! instead of gnd!):<o:p></o:p></li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">A schematic for simulating<span class="Apple-converted-space">&nbsp;</span>ID
+v. VDS of an NMOS device for VGS varying from 0 to 5 V in 1 V steps
+while VDS varies from 0 to 5 V in 1 mV steps. Use&nbsp;a 6u/600n
+width-to-length ratio.</li></ul></ul><br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 433px; height: 290px;" alt="media/04-lab-sim_NMOS_ID_VDS-schem.jpg" src="media/04-lab-sim_NMOS_ID_VDS-schem.jpg"><br>
+      </td>
+      <td style="vertical-align: top;"><img style="width: 503px; height: 290px;" alt="media/06-lab-sim_NMOS_ID_VDS-sim.jpg" src="media/06-lab-sim_NMOS_ID_VDS-sim.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);">
+  <ul style="margin-bottom: 0in;">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">A
+schematic for simulating ID v. VGS of an NMOS device for VDS = 100 mV
+where VGS varies from 0 to 2 V in 1 mV steps. Again use a 6u/600n
+width-to-length ratio.</li>
+  </ul>
+</ul>
+&nbsp;<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 455px; height: 290px;" alt="media/07-lab-sim_NMOS_ID_VGS-schem.jpg" src="media/07-lab-sim_NMOS_ID_VGS-schem.jpg"></td>
+      <td style="vertical-align: top;"><img style="width: 506px; height: 290px;" alt="media/08-lab-sim_NMOS_ID_VGS-sim.jpg" src="media/08-lab-sim_NMOS_ID_VGS-sim.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);">
+  <ul style="margin-bottom: 0in;">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">A
+schematic for simulating ID v. VSD (note VSD not VDS) of a PMOS device
+for VSG (not VGS) varying from 0 to 5 V in 1 V steps while VSD varies
+from<span class="Apple-converted-space">&nbsp;</span>0 to 5 V in 1 mV steps. Use&nbsp;a 12u/600n width-to-length ratio.<o:p></o:p></li>
+  </ul>
+</ul>
+&nbsp;<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 660px; height: 290px;" alt="media/11-lab-sim_PMOS_ID_VSD-schem.jpg" src="media/11-lab-sim_PMOS_ID_VSD-schem.jpg"><br>
+      </td>
+      <td style="vertical-align: top;"><img style="width: 491px; height: 290px;" alt="media/13-lab-sim_PMOS_ID_VSD-sim.jpg" src="media/13-lab-sim_PMOS_ID_VSD-sim.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);">
+  <ul style="margin-bottom: 0in;">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">A
+schematic for simulating ID v. VSG of a PMOS device for VSD = 100 mV
+where VSG varies from 0 to 2 V in 1 mV steps. Again, use a 12u/600n
+width-to-length ratio.</li>
+  </ul>
+</ul>
+&nbsp;<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 654px; height: 290px;" alt="media/16-lab-sim_PMOS_IV_VSG-schematic.jpg" src="media/16-lab-sim_PMOS_IV_VSG-schematic.jpg"></td>
+      <td style="vertical-align: top;"><img style="width: 541px; height: 290px;" alt="media/14-lab-sim_PMOS_IV_VSG-sim.jpg" src="media/14-lab-sim_PMOS_IV_VSG-sim.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <br>
-&gt;<br>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">
+      <ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Lay
+out a 6u/0.6u NMOS device and connect all 4 MOSFET terminals to probe
+pads.&nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Show your layout passes DRCs.&nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Make a corresponding schematic so you can LVS your layout. <br>
+</li></ul>
+      </ul>
+      </td>
+      <td style="vertical-align: top; text-align: left;">
+      <ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);">
+<li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Lay out a 12u/0.6u PMOS device and connect all 4 MOSFET terminals to probe pads.&nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Show your layout passes DRCs.&nbsp;</li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt;">Make a corresponding schematic so you can LVS your layout</li></ul>
+      </ul>
+      <br>
+
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><img style="width: 500px; height: 486px;" alt="media/17-PAD_NMOS_schem.jpg" src="media/17-PAD_NMOS_schem.jpg"><br>
+      </td>
+      <td style="text-align: center;"><img style="width: 509px; height: 486px;" alt="media/19-PAD_PMOS_schem.jpg" src="media/19-PAD_PMOS_schem.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><img style="width: 500px; height: 612px;" alt="media/18-PAD_NMOS_layout-1.jpg" src="media/18-PAD_NMOS_layout-1.jpg"><br>
+      </td>
+      <td style="text-align: center;"><img style="width: 509px; height: 730px;" alt="media/19-PAD_PMOS_layout1.jpg" src="media/19-PAD_PMOS_layout1.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><img style="width: 500px; height: 276px;" alt="media/18-PAD_NMOS_layout-2.jpg" src="media/18-PAD_NMOS_layout-2.jpg"><br>
+      </td>
+      <td style="text-align: center;"><img style="width: 509px; height: 339px;" alt="media/19-PAD_PMOS_layout2.jpg" src="media/19-PAD_PMOS_layout2.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><img style="width: 600px; height: 234px;" alt="media/18-PAD_NMOS_layout-DRCjpg.jpg" src="media/18-PAD_NMOS_layout-DRCjpg.jpg"><br>
+      </td>
+      <td><img style="width: 600px; height: 234px;" alt="media/19-PAD_PMOS_DRC.jpg" src="media/19-PAD_PMOS_DRC.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td><img style="width: 600px; height: 513px;" alt="media/18-PAD_NMOS_layout-LVS.jpg" src="media/18-PAD_NMOS_layout-LVS.jpg"><br>
+      </td>
+      <td><img style="width: 600px; height: 382px;" alt="media/19-PAD_PMOS_LVS.jpg" src="media/19-PAD_PMOS_LVS.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <br>
 
 <hr style="width: 100%; height: 2px;"><br>
+<div style="text-align: center;">
 
 All backed up work can be found at <a href="https://github.com/martinjaime/CMOSedu-Reports">https://github.com/martinjaime/CMOSedu-Reports</a> <br>
+</div>
+
 <br>
 <hr style="width: 100%; height: 2px;"><o:p></o:p>
 
