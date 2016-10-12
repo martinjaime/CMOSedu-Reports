@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Lab 6</title>
+  
+
+
+  <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-4280998-1']);
+_gaq.push(['_setDomainName', 'cmosedu.com']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google- analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+  </script><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="Martin Jaime" name="author">
+  <meta content="EE421L Report" name="description"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body style="background-color: rgb(238, 236, 225); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#0000ee"><small><small><small><b style="color: rgb(0, 0, 0); font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225);"><span style="font-size: 24pt; color: rgb(153, 51, 102);">Lab 6 - EE 421L&nbsp;</span></b></small></small></small>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>Authored
+by Martin Jaime,</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;">email: <span style="font-weight: bold;">jaimem5</span> at the UNLV students domain</p>
+
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>October 12, 2016<br>
+</o:p></p>
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p><br>
+</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Times New Roman;"><o:p>
+</o:p></p><big><span style="font-family: Times New Roman; color: rgb(68, 170, 170);">Pre-lab work: </span></big>
+
+<br style="font-family: Times New Roman;">
+<span style="font-family: Times New Roman;"><span class="Apple-converted-space"></span></span><ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Back-up all of your work from the lab and the course.<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Go through<span class="Apple-converted-space">&nbsp;</span><span style="text-align: start; word-spacing: 0px;">Cadence Tutorial 4</span><span style="text-align: start; word-spacing: 0px;"><span class="Apple-converted-space">&nbsp;</span></span><span style="text-align: start; word-spacing: 0px;">seen<span class="apple-converted-space">&nbsp;</span></span><a href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank" style="color: rgb(0, 0, 238); text-decoration: underline; text-align: start; word-spacing: 0px;">here</a><span style="text-align: start; word-spacing: 0px;">.</span><o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;"><span style="text-align: start; word-spacing: 0px;">Read through the lab in its entirety before starting to work on it</span></li></ul><span style="font-family: Times New Roman,Times,serif;" class="Apple-converted-space">&nbsp;<br>
+</span>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td colspan="2" rowspan="1" style="vertical-align: top;"><big><span style="font-weight: bold;">Prelab Work</span></big><br>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="3" style="vertical-align: top;"><img style="width: 257px; height: 782px;" alt="media/05-tut-NAND-layout.jpeg" src="media/05-tut-NAND-layout.jpeg"><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 330px; height: 242px;" alt="media/01-tut-NAND-schem.jpeg" src="media/01-tut-NAND-schem.jpeg"></td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 330px; height: 284px;" alt="media/03-tut-sim-NAND-schem.jpeg" src="media/03-tut-sim-NAND-schem.jpeg"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><img style="width: 438px; height: 229px;" alt="media/04-tut-sim-NAND-plot.jpeg" src="media/04-tut-sim-NAND-plot.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<span style="font-family: Times New Roman,Times,serif;" class="Apple-converted-space"><br>
+</span><span style="font-family: Times New Roman;">&nbsp;<span class="Apple-converted-space"></span></span><hr style="width: 100%; height: 2px; font-family: Times New Roman;">&nbsp;<br>
+<big><span style="font-weight: bold;">Lab Report</span></big><br>
+<ul style="margin-bottom: 0in; color: rgb(0, 0, 0); font-family: Times New Roman,Times,serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(238, 236, 225);" type="disc"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Draft
+the schematics of a 2-input NAND gate (Fig. 12.1), and a 2-input XOR
+gate (Fig. 12.18) using 6u/0.6u MOSFETs (both NMOS and PMOS)<o:p></o:p></li><ul style="margin-bottom: 0in;" type="circle"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Create layout and symbol views for these gates showing that the cells&nbsp;DRC and LVS without errors<o:p></o:p></li><ul style="margin-bottom: 0in;" type="square"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">ensure
+that your symbol views are the commonly used symbols (not boxes!) for
+these gates with your initials in the middle of the symbol &nbsp;<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">ensure all layouts in this lab use standard cell frames<span class="SpellE"></span><span class="Apple-converted-space">&nbsp;</span>that snap together end-to-end for routing<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">vdd!</span><span class="Apple-converted-space">&nbsp;</span>and<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">gnd!</span><o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">use a<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">standard cell</span><span class="Apple-converted-space">&nbsp;</span>height taller than you need for these gates so that it<span class="SpellE"></span><span class="Apple-converted-space">&nbsp;</span>can be used for more complicated layouts in the future<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">ensure gate inputs, outputs,<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">vdd!</span>, and<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">gnd</span>! are all routed on metal1<o:p></o:p></li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Use cell names that include your initials and the current year/semester, e.g. NAND_jb_f19 (if it were fall 2019)<o:p></o:p></li><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Using Spectre simulate the logical operation of the gates for all 4 possible inputs (00, 01, 10, and 11) &nbsp;</li><ul style="margin-bottom: 0in;"><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">comment on how timing of the input pulses can cause glitches in the output of a gate<br>
+</li></ul><li class="MsoNormal" style="margin: 0in 0in 0.0001pt; font-size: 12pt; color: black;">Below
+shows (click for a larger image): 1) schematic of a 2-input NAND gate,
+2) schematic of a 2-input XOR gate, 3) simulation schematic, 4) example
+pulse statement to generate a digital input, and 5) simulating the
+operation of the gates for all 4 possible inputs.&nbsp; &nbsp;</li></ul></ul>&nbsp;<br>
+<big><span style="font-weight: bold;">2-input NAND Gate</span></big><br>
+<ul>
+  <li>Gate layout, schematics, and simulation schematics illustrated below.</li>
+</ul>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="3" style="vertical-align: top;"><img style="width: 286px; height: 795px;" alt="media/09-lab-NAND-layout.jpeg" src="media/09-lab-NAND-layout.jpeg"><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 407px; height: 314px;" alt="media/08-lab-NAND-schem.jpeg" src="media/08-lab-NAND-schem.jpeg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 597px; height: 220px;" alt="media/10-lab-NAND-DRC.jpeg" src="media/10-lab-NAND-DRC.jpeg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 598px; height: 220px;" alt="media/11-lab-NAND-LVS.jpeg" src="media/11-lab-NAND-LVS.jpeg"></td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;
+<br>
+<big><span style="font-weight: bold;">2-input XOR Gate</span></big><br>
+
+<ul>
+<li>Gate layout, schematics, and simulation schematics illustrated below.</li>
+</ul>
+
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">XOR Schematic</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 621px; height: 486px;" alt="media/12-lab-XOR-schem.jpeg" src="media/12-lab-XOR-schem.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td colspan="2" rowspan="1" style="vertical-align: top;"><span style="font-weight: bold;">XOR Layout passes DRC and LVS</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="2"><img style="width: 591px; height: 494px;" alt="media/14-lab-XOR-layout.jpeg" src="media/14-lab-XOR-layout.jpeg"></td>
+      <td><img style="width: 600px; height: 200px;" alt="media/15-lab-XOR-DRC.jpeg" src="media/15-lab-XOR-DRC.jpeg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td><img style="width: 600px; height: 197px;" alt="media/16-lab-XOR-LVS.jpeg" src="media/16-lab-XOR-LVS.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<big><span style="font-weight: bold;">Simulation of the Gates</span></big><br>
+<ul>
+  <li>Both gates are simulated with the following schematic.</li>
+</ul>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 446px; height: 231px;" alt="media/16-lab-XOR-LVS.jpeg" src="media/17-lab-gates-sim-schematic.jpeg"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Simulation schematic using the NAND and XOR gate.</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp; <br>
+<ul>
+  <li>The simulation was run using the schematics and the extracted
+layouts. Both produced the same practical results with the same logic
+hazards when the input signals were both switching. This is due to the
+input delays throught the logic gates. The inputs ran through all
+possible logic combinations from binary 0 to binary 3. <br>
+  </li>
+</ul>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Simulation from Schematic</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 705px; height: 399px;" alt="media/18-lab-gates-sim-schematic-plot.jpeg" src="media/18-lab-gates-sim-schematic-plot.jpeg"><br>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;" align="center">
+      <td style="vertical-align: top;">Simulation from Extracted<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 704px; height: 401px;" alt="media/19-lab-gates-sim-layout-plot.jpeg" src="media/19-lab-gates-sim-layout-plot.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<span style="font-weight: bold;">1-bit Full Adder Schematic, Layout, and Simulation</span><br>
+&nbsp;<br>
+<div style="text-align: center;"><img style="width: 426px; height: 170px;" alt="media/20-lab-full_adder-schematic.jpeg" src="media/20-lab-full_adder-schematic.jpeg"><br>
+</div>
+<ul>
+  <li>The full adder schematic was simple to compose and simulate. Laying out the full adder posed a challenge since
+the gates had to be laid in series. Individual gate cells were
+flattened to have more control over their configuration. The
+input/outputs of the gates had to be routed through metal 1, 2, 3, and
+poly. The input output pins of the full adderremained on metal1. ptap and ntap cells were extended to cover the entirerity of the full ader cell.&nbsp; </li>
+</ul>
+<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="left">
+      <td colspan="2" rowspan="1" style="vertical-align: top;"><img style="width: 1240px; height: 433px;" alt="media/24-lab-full_adder-layout.jpeg" src="media/24-lab-full_adder-layout.jpeg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: right;"><img style="width: 640px; height: 203px;" alt="media/26-lab-full_adder-DRC.jpeg" src="media/26-lab-full_adder-DRC.jpeg"><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img style="width: 640px; height: 208px;" alt="media/25-lab-full_adder-LVS.jpeg" src="media/25-lab-full_adder-LVS.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr style="font-weight: bold;" align="center">
+      <td style="vertical-align: top;">Full Adder Simulation Schematic<br>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;" align="center">
+      <td style="vertical-align: top;"><img style="width: 532px; height: 287px;" alt="media/22-lab-full_adder-sim-schematic.jpeg" src="media/22-lab-full_adder-sim-schematic.jpeg"><br>
+      </td>
+    </tr>
+    <tr style="font-weight: bold;" align="center">
+      <td style="vertical-align: top;">Simulation from Extracted<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 652px; height: 351px;" alt="media/23-lab-full_adder-sim-layout-plot.jpeg" src="media/23-lab-full_adder-sim-layout-plot.jpeg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;<br>
+<ul>
+  <li>Simulation results show that the sum of A, B, and Cin output as
+Sum and Cout. Sum is the least significant bit, and Cout the most
+significant bit. When all three inputs are 1, the output is 3 with Sum
+= 1, and Cout = 1 to make up the binary number 11<small><sub>2<big><big><big><small><small><small><small></small></small></small></small></big></big></big></sub></small>. The inputs cover all possible combinations from 000<small><sub>2</sub></small> to 111<small><sub>2</sub></small>.
+As seen in the simulation results, there are glitches when multiple
+inputs are switching at the same time, and the output is not intended
+to change such as switching from input 001<small><sub>2</sub></small> to 010<small><sub>2</sub></small> and when switching from 101<small><sub>2</sub></small> to 110<small><sub>2</sub></small>. In both situations, the input is not meant to change since the sum is not meant to change. <br>
+  </li>
+</ul>
+The design files used in this lab can be downloaded <a href="lab6_mj.zip">here</a>.<br>
+&nbsp;<br>
+
+
+<hr style="width: 100%; height: 2px;"><br>
+
+All backed up work can be found at <a href="https://github.com/martinjaime/CMOSedu-Reports">https://github.com/martinjaime/CMOSedu-Reports</a> <br>
+<br>
+<hr style="width: 100%; height: 2px;"><o:p></o:p>
+
+
+
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><a style="font-family: Times New Roman;" href="http://cmosedu.com/jbaker/courses/ee421L/f16/students/" target="_blank">EE421L Lab Student Listi<span style="font-family: Times New Roman,Times,serif;">ng</span></a><span style="font-family: Times New Roman,Times,serif;"> | <a href=".." target="_top">My Lab Directory</a> | <a href="http://cmosedu.com/jbaker/courses/ee421L/f16/ee421L.htm" target="_top">EE421 Home Page</a>&nbsp;</span></o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p>&nbsp;</o:p></p>
+<p style="margin: 0in 0in 0.0001pt; font-size: medium; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(238, 236, 225); font-family: Comic Sans MS;"><o:p><br>
+</o:p></p>
+
+
+
+</body></html>
